@@ -61,7 +61,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Alegreya-Regular";
+  font-family: "AlegreyaSC-Regular";
   font-size: 1.7rem;
   font-variant: small-caps;
   color: #fff;
@@ -164,6 +164,8 @@ p {
   display: flex;
   flex-direction: row;
 }
+
+/*! --- Mobile Version --- !*/
 
 /** ----- Header ---- */
 
@@ -417,6 +419,11 @@ header article {
   padding: 10px;
 }
 
+.mainS3 .blogWrapper {
+  justify-content: space-around;
+  gap: 25px;
+}
+
 .mainS3 .ms3GalleryBox img,
 .mainS3 .ms3GalleryBox .h4k,
 .mainS3 .ms3GalleryBox p {
@@ -569,3 +576,211 @@ footer p {
   width: 150px;
   color: #fff;
 }
+
+/*! --- Tablet Version --- !*/
+
+@media only screen and (min-width: 768px) {
+  /** --- header ---- **/
+
+  header article {
+    margin-top: 50px;
+    width: 500px;
+  }
+
+  header article h2 {
+    font-size: 5.6rem;
+  }
+
+  header article p {
+    font-size: 2.2rem;
+  }
+
+  /** --- Main Section 1 --- **/
+
+  .mainS1 .ms1GalleryBox {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .mainS1 .ms1GalleryBox div {
+    height: 20vh;
+    overflow: hidden;
+  }
+
+  .mainS1 .ms1GalleryBox div:active img {
+    transform: translate(0px, 0px) scale(2, 2);
+  }
+
+  .mainS1 .ms1GalleryBox div:active div {
+    display: flex;
+  }
+
+  .mainS1 .ms1GalleryBox div img {
+    transition: transform 500ms ease-in-out;
+  }
+
+  .mainS1 .ms1GalleryBox div div {
+    display: none;
+  }
+
+  /** --- Main Section 2 --- **/
+
+  .mainS2 {
+    height: 100vh;
+  }
+
+  /** --- Main Section 3 --- **/
+
+  .mainS3 .blogWrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  /** --- Main Section 4 --- **/
+
+  .mainS4 {
+    height: 47vh;
+    padding: 60px 10px;
+  }
+
+  /** --- Main Section 6 --- **/
+
+  .mainS6 {
+    height: 50vh;
+    padding-top: 50px;
+  }
+
+  /** --- footer --- **/
+
+  footer {
+    padding: 30px 30px;
+    height: 15vh;
+  }
+
+  footer p {
+    width: 100%;
+  }
+}
+
+/*! --- Desktop Version --- !*/
+
+@media only screen and (min-width: 992px) {
+  /** --- Basic ---- **/
+
+  .textBox h4 {
+    margin-bottom: 20px;
+  }
+
+  /** --- header ---- **/
+
+  header {
+    height: 90vh;
+  }
+
+  header article {
+    margin-top: 160px;
+    width: 500px;
+  }
+
+  /** --- Main Section 1 --- **/
+
+  .mainS1 {
+    margin: 0 auto 60px auto;
+    width: 90%;
+  }
+
+  .mainS1 .ms1GalleryBox {
+    gap: 25px;
+  }
+
+  .mainS1 .ms1GalleryBox div {
+    height: 25vh;
+  }
+
+  /** --- Main Section 2 --- **/
+
+  .mainS2 {
+    height: 70vh;
+  }
+
+  .mainS2 div .ms2ServiceWrapper {
+    flex-direction: row;
+  }
+
+  .mainS2 .ms2Wrapper .ms2a1 {
+    margin-bottom: 15px;
+  }
+
+  /** --- Main Section 3 --- **/
+
+  .mainS3 {
+    margin: 0 auto 50px auto;
+    width: 88%;
+  }
+
+  .mainS3 .blogWrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  /** --- Main Section 4 --- **/
+
+  .mainS4 {
+    margin-bottom: 50px;
+  }
+
+  .mainS4 article {
+    width: 85%;
+  }
+
+  /** --- Main Section 5 --- **/
+
+  .mainS5 {
+    margin: 0 auto 50px auto;
+    width: 85%;
+  }
+
+  .mainS5 article {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /** --- Main Section 6 --- **/
+
+  .mainS6 {
+    height: 60vh;
+    padding-top: 50px;
+  }
+
+  .mainS6 .boxWrapper {
+    gap: 5px;
+    width: 85%;
+  }
+
+  .mainS6 .boxWrapper div h5 {
+    margin-bottom: 10px;
+  }
+
+  .mainS6 .boxWrapper div p {
+    color: #fff;
+  }
+
+  /** --- footer --- **/
+
+  footer {
+    padding: 70px 100px;
+    height: 20vh;
+  }
+
+  footer p {
+    width: 100%;
+  }
+}
+
+/* ? Tablet ab 768px */
+/* ? Desktop ab 992px */

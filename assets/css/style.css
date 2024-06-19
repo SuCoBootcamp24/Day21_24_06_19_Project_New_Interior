@@ -677,11 +677,11 @@ footer p {
   /** --- header ---- **/
 
   header {
-    height: 90vh;
+    height: 70vh;
   }
 
   header article {
-    margin-top: 160px;
+    margin-top: 200px;
     width: 500px;
   }
 
@@ -697,13 +697,13 @@ footer p {
   }
 
   .mainS1 .ms1GalleryBox div {
-    height: 25vh;
+    height: 20vh;
   }
 
   /** --- Main Section 2 --- **/
 
   .mainS2 {
-    height: 70vh;
+    height: 41vh;
   }
 
   .mainS2 div .ms2ServiceWrapper {
@@ -732,6 +732,7 @@ footer p {
 
   .mainS4 {
     margin-bottom: 50px;
+    height: 30vh;
   }
 
   .mainS4 article {
@@ -753,7 +754,7 @@ footer p {
   /** --- Main Section 6 --- **/
 
   .mainS6 {
-    height: 60vh;
+    height: 40vh;
     padding-top: 50px;
   }
 

@@ -246,8 +246,6 @@ header article {
   height: 60px;
 }
 
-/***********************************************/
-
 .nav-container .checkbox {
   display: block;
 
@@ -261,7 +259,7 @@ header article {
   opacity: 0;
   cursor: pointer;
 }
-/***********************************************/
+
 .nav-container .hamburger-lines {
   display: flex;
   flex-direction: column;
@@ -277,8 +275,6 @@ header article {
   height: 26px;
   width: 32px;
 }
-
-/***********************************************/
 
 .nav-container .hamburger-lines .line {
   display: block;
@@ -314,7 +310,7 @@ header article {
 
   margin-top: 5vh;
 
-  height: 25vh;
+  height: 30vh;
   width: 100%;
   text-align: center;
   opacity: 0.8;
@@ -618,6 +614,10 @@ footer p {
 
   header article p {
     font-size: 2.2rem;
+  }
+
+  .navbar .menu-items {
+    margin-top: 7vh;
   }
 
   /** --- Main Section 1 --- **/

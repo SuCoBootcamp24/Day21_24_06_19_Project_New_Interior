@@ -179,6 +179,8 @@ header {
 
   margin-bottom: 50px;
   height: 60vh;
+
+  overflow: hidden;
 }
 
 nav {
@@ -201,6 +203,7 @@ header article {
   margin: 20px 0 0 20px;
   width: 260px;
 }
+
 .container {
   max-width: 1050px;
   width: 90%;
@@ -301,9 +304,8 @@ header article {
 
   padding-top: 50px;
 
-  height: 45vh;
+  height: 30vh;
   width: 100%;
-
   text-align: center;
 }
 
@@ -313,8 +315,9 @@ header article {
   font-weight: 500;
 }
 
-.nav-container input[type="checkbox"]:not(:checked) ~ .menu-items {
-  display: none;
+.nav-container input[type="checkbox"] ~ .menu-items {
+  transform: translate(150%);
+  transition: transform 0.5s ease-in-out;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -674,6 +677,26 @@ footer p {
     margin-bottom: 20px;
   }
 
+  .btn2 {
+    transition: background-color 300ms ease-out, color 300ms ease-out;
+  }
+
+  .btn2:hover {
+    background: #035c5f;
+    color: white;
+    text-decoration: none;
+  }
+
+  .btn3:hover {
+    background: white;
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
   /** --- header ---- **/
 
   header {
@@ -683,6 +706,10 @@ footer p {
   header article {
     margin-top: 200px;
     width: 500px;
+  }
+
+  .navbar h1:hover {
+    text-decoration: underline;
   }
 
   /** --- Main Section 1 --- **/
@@ -698,6 +725,14 @@ footer p {
 
   .mainS1 .ms1GalleryBox div {
     height: 20vh;
+  }
+
+  .mainS1 .ms1GalleryBox div:hover img {
+    transform: translate(0px, 0px) scale(2, 2);
+  }
+
+  .mainS1 .ms1GalleryBox div:hover div {
+    display: flex;
   }
 
   /** --- Main Section 2 --- **/
@@ -769,6 +804,10 @@ footer p {
 
   .mainS6 .boxWrapper div p {
     color: #fff;
+  }
+
+  .mainS6 article form .subBTN:hover {
+    background: white;
   }
 
   /** --- footer --- **/
